@@ -1,0 +1,124 @@
+/* Réinitialisation de base et styles de boîte */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f4f4f4; /* Couleur de fond de la page */
+    color: #333; /* Couleur de texte par défaut */
+    padding-bottom: 50px; /* Pour éviter que le footer ne masque le contenu */
+}
+
+nav {
+    background-color: #a306b6;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+}
+
+nav li {
+    padding: 20px 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    font-weight: bold; /* Rend le texte des liens gras */
+}
+
+nav a.active, nav a:hover {
+    background-color: white;
+    color: #a306b6;
+    padding: 21px 15px; /* Ajuste le padding pour agrandir l'encadré */
+    border-radius: 0px; /* Coins arrondis si nécessaire */
+    margin: 1px 0; /* Ajuste les marges négatives pour étendre le fond blanc */
+}
+
+main {
+    padding: 50px 0;
+}
+
+h1 {
+    background-color: #e0e0e0; /* Gris plus prononcé */
+    color: #333;
+    font-size: 36px;
+    margin: 20px auto 40px; /* Ajoute une marge automatique pour centrer le bloc */
+    width: 80%; /* Ajuste selon la largeur souhaitée qui n'est pas 100% */
+    padding: 20px 0;
+    display: block;
+    text-align: center; /* Assure que le texte est centré */
+    border-radius: 8px;
+}
+
+form {
+    background-color: #fff;
+    width: 50%;
+    max-width: 800px; /* Largeur maximale pour les grands écrans */
+    margin: 0 auto;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée */
+    border-radius: 8px; /* Coins arrondis */
+}
+
+form h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px; /* Espacement sous le sous-titre */
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px; /* Espacement entre les champs */
+    border: 1px solid #ccc;
+    background-color: #e0e0e0;
+    border-radius: 8px; /* Coins arrondis pour les champs de saisie */
+    font-size: 16px;
+}
+
+button {
+    background-color: #a306b6;
+    color: white;
+    font-size: 16px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transition douce pour le survol */
+}
+
+button:hover {
+    background-color: #9600a1; /* Assombrir le bouton au survol */
+}
+
+footer {
+    background-color: #888484; /* Fond gris */
+    color: white;
+    text-align: left; /* Texte aligné à gauche */
+    padding: 10px 20px; /* Padding pour espacer le texte des bords */
+    position: fixed; /* Le footer reste fixe */
+    bottom: 0;
+    left: 0; /* Positionné en bas à gauche */
+    width: 100%; /* Prend toute la largeur pour assurer que le fond gris s'étend */
+}
